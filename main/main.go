@@ -1,6 +1,6 @@
 package main
 
-//This program was created to calculate the results of a number of the assesment tests in order to evaluate the level of creativity and
+//This program was created to calculate the results of a number of the assessment tests in order to evaluate the level of creativity and
 //self-realization of the participants. It was created as a part of the study on the relation between the two features of a person.
 //Данная программа подсчитывает результаты психологических опросников, направленных на оценку креативности и
 //уровня самореализации испытуемого. Программа была создана как часть исследования о взаимодействии этих двух аспектов личности.
@@ -25,7 +25,7 @@ func Johnson(a []string) string {
 	return JustSum
 }
 
-// Williams function calculates the results of one of the tests from Frank Williams'Creativity Assessment Packet.
+// Williams function calculates the results of one of the tests from Frank Williams' Creativity Assessment Packet.
 // Функция Williams считает результаты одного из тестов из батареи тестов Вильямса.
 func Williams(a []string) string {
 	var risk int
@@ -287,7 +287,7 @@ func Kudinov(a []string) string {
 	return Kudinov
 }
 
-// Cat function calculates the results of the self-actualization test (CAT is a cyrillic acronym)
+// Cat function calculates the results of the self-actualization test (CAT is a Cyrillic acronym)
 // Функция Cat считает результаты самоатуализационного теста (САТ).
 func Cat(s []string) string {
 	var time01, supp02, val03, flex04, sense05, spon06, sfResp07, sfAccpt08, humNat09, syn10, aggr11, cont12, cur13, creat14 int
@@ -390,7 +390,7 @@ func Cat(s []string) string {
 	return results
 }
 
-// check function checks if there's an error in program's execution and if there is one it generates a message for the user.
+// check function checks if there's an error in the program's execution and if there is one, it generates a message for the user.
 // Функция check проверяет выполнение программы на наличие ошибки и генерирует сообщение для пользователя в случае её присутствия.
 func check(e error) {
 	if e != nil {
@@ -405,7 +405,7 @@ func createSlice() []string {
 	//  pointR := &rec
 	//var err error
 	var rec []string
-	f, err := os.Open("answers2903.csv")
+	f, err := os.Open("test.csv")
 	check(err)
 	defer f.Close()
 	csvReader := csv.NewReader(f)
@@ -422,7 +422,7 @@ func createSlice() []string {
 	return rec
 }
 
-// splitAll function splits the initial raw slice of data raw by raw.
+// splitAll function splits the initial raw slice of data row by row.
 // Функция splitAll разделяет изначальный срез данных из таблицы на построчные подсрезы для дальнейшей работы.
 func splitAll(a []string) ([]string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string, []string) {
 	headerRow, firstRow, secondRow, thirdRow, fourthRow, fifthRow, sixthRow, seventhRow, ninethRow, eightsRow, tenthRow, eleventhRow, twelvethRow, thirteenthRow, fourteenthRow, fifteenthRow, sixteenthRow, seventeenthRow, eighteenthRow, nineteenthRow, twenteenthRow, twentyfirstRow, twentysecondRow, twentythirdRow, twentyfourthRow, twentyfifthRow, twentysixthRow, twentyseventhRow, twentyeighthRow, twentyninthRow, thirtiethRow, thirtyfirstRow, thirtysecondRow, thirtythirdRow, thirtyfourthRow, thirtyfifthRow, thirtysixthRow, thirtyseventhRow, thirtyeightsRow, thirtyninethRow, fourtiethRow, fourtyfirstRow, fourtysecondRow, fourtythirdRow, fourtyfourthRow, fourtyfifthRow := make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000), make([]string, 2000)
